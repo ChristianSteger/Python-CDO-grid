@@ -72,7 +72,7 @@ for i in ("remapbil", "remapcon"):
 
 # Alternative method: Remap with NetCDF CDO grid description file
 # -> this method is useful if (I) CDO does not understand the selected grid
-#    description of if (II) user-specific grid specification are required
+#    description or if (II) user-specific grid modifications are required
 lon_cent_2d, lat_cent_2d = np.meshgrid(lon_cent, lat_cent)
 lon_edge_2d, lat_edge_2d = np.meshgrid(lon_edge, lat_edge)
 file_netcdf = path_work + "grid_target_lonlat.nc"
